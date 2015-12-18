@@ -1,0 +1,7 @@
+ #!/bin/bash 
+for file in 1400*; do
+	newfile="${file/1400OS_/}"
+	newfile="ch${newfile/_Codes/}"	
+	echo $newfile
+	mv "$file" "$newfile"
+done
